@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tozihat">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layoutDirection="rtl">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/ic_menu"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_menu"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_search"
+                android:layout_toLeftOf="@id/img_menu"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_search"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rel_top">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_save_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/relativeLayout"
+            android:layout_margin="5dp"
+            android:id="@+id/save"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_kharid_two"
+            android:layout_toRightOf="@id/save"
+            android:layout_above="@id/relativeLayout"
+            android:layout_margin="5dp"
+            android:id="@+id/kharid"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_pdf_icon"
+            android:layout_toRightOf="@id/kharid"
+            android:layout_above="@id/relativeLayout"
+            android:layout_margin="5dp"
+            android:id="@+id/format"/>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:background="@drawable/shape_gradient">
+
+            <TextView
+                android:id="@+id/book_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_above="@+id/reshte_title"
+                android:text="@string/book_name"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_above="@id/reshte"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:maxLength="20"
+                android:layout_toLeftOf="@id/book_name_title"
+                android:text="@string/book_name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/reshte_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_above="@id/enteshar_title"
+                android:layout_marginLeft="5dp"
+                android:text="@string/reshte"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/reshte"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_above="@id/enteshar"
+                android:layout_toLeftOf="@id/reshte_title"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:text="@string/reshte"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/enteshar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_above="@id/upload_title"
+                android:layout_marginLeft="5dp"
+                android:text="@string/enteshar"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/enteshar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_above="@id/upload"
+                android:layout_toLeftOf="@id/enteshar_title"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:text="@string/enteshar"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/upload_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/upload"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/upload_title"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:text="@string/upload"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/uni_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_below="@id/upload_title"
+                android:layout_marginLeft="5dp"
+                android:text="@string/uni"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/uni"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/upload"
+                android:layout_toLeftOf="@id/upload_title"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:text="@string/uni"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/ostad_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_below="@id/uni_title"
+                android:layout_marginLeft="5dp"
+                android:text="@string/ostad"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ostad"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/uni"
+                android:layout_toLeftOf="@id/ostad_title"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:text="@string/ostad"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/book_price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/img_avatar"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/ostad_title"
+                android:text="@string/price"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/book_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLength="25"
+                android:layout_toLeftOf="@id/book_price_title"
+                android:layout_below="@id/ostad"
+                android:text="@string/price"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/rial"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/ostad"
+                android:layout_toLeftOf="@id/book_price"
+                android:text="یال"
+                android:textColor="@color/gray"
+                android:textSize="9sp" />
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="80dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_image_white"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="90dp"-->
+        <!--        android:layout_height="150dp"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:background="@drawable/shape_image"-->
+        <!--        android:scaleType="fitXY"-->
+        <!--        android:layout_marginRight="30dp">-->
+        <!--        -->
+        <!--    </RelativeLayout>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/rel_top"
+        android:background="@drawable/shape_gradient"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/tozihat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:maxLength="20"
+            android:text="@string/tozihat"
+            android:textColor="@color/black" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tozihat_title"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/tozihat"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:maxLength="20"
+                android:text="@string/book_name"
+                android:textColor="@color/black" />
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

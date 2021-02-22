@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">جزوه فعال</string>
+    <string name="user_name">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="re_password">تکرار رمز عبور</string>
+    <string name="name">نام </string>
+    <string name="family">نام خانوادگی</string>
+    <string name="email">ایمیل</string>
+    <string name="phone_number">شماره تماس</string>
+    <string name="reshte">رشته</string>
+    <string name="remember_password">رمز عبور خود را فراموش کرده اید؟ </string>
+    <string name="create_account">می خواهید حساب کاربری بسازید؟ </string>
+    <string name="qavanin">قوانین </string>
+    <string name="mipaziram">را می پذیرم</string>
+    <string name="sabt_name"> از اینجا ثبت نام کن </string>
+    <string name="add_jozve">افزودن جذوه</string>
+    <string name="add_favorite">علاقه مندی </string>
+    <string name="profile">پروفایل</string>
+    <string name="omumi"> عمومی</string>
+    <string name="takhasosi"> اختصاصی</string>
+    <string name="maqale">مقالات</string>
+    <string name="book_name"> نام درس </string>
+    <string name="price"> قیمت  </string>
+    <string name="enteshar"> سال انتشار  </string>
+    <string name="upload"> تاریخ بارگذاری  </string>
+    <string name="uni"> نام دانشگاه  </string>
+    <string name="ostad"> نام استاد  </string>
+    <string name="tozihat"> توضیحات </string>
+    <string name="daste"> نام دسته </string>
+    <string name="upload_file"> بارگزاری فایل </string>
+    <string name="file">  فایل </string>
+    <string name="my_buying"> خریدهای من</string>
+    <string name="list_asatid"> لیست اساتید </string>
+    <string name="uploading"> بارگذاری شده ها </string>
+    <string name="support"> پشتیبانی </string>
+    <string name="about"> درباره ما </string>
+    <string name="exit"> خروج</string>
+    <string name="full_name"> نام و نام خانوادگی </string>
+    <string name="card_number"> شماره کارت            ---- ---- ---- ---- </string>
+    <string name="bank_name"> نام بانک </string>
+    <string name="bank_moshakhasat"> مشخصات کارت بانکی </string>
+    <string name="ok"> تایید </string>
+    <string name="support_mozuoo"> موضوع </string>
+    <string name="support_email"> ایمیل خود را وارد کنید </string>
+    <string name="support_nazarat"> نظرات خود را اینجا بنویسید </string>
+    <string name="send"> ارسال </string>
+    <string name="support_text"> درصورت بروز هرگونه مشکل از طریق راه های ارتباطی زیر با ما در تماس باشید </string>
+    <string name="about_text">
+        این پروژه برای دانشگاه های فنی و حرفه ای استان مازندران طراحی و برنامه نویسی میشود ،
+        به طور کلی در استان مازندران 25 رشته فنی وجود دارد.
+        که یک سری از دروس بین تمامی رشته ها مشترک هستند و بقیه به صورت اختصاصی وجود دارند.
+        این برنامه  بستری برای اساتید و دانشجویان فراهم میکند که میتوانند جزوه های خود را درون آن قرار دهند.\n
+        ارتباط راحت تر با استاد خود داشته باشند.\n
+        به راحتی از کنسلی کلاس ها مطلع شوند .\n
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

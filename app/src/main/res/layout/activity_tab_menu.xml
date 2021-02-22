@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".tab_menu">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/blue_back">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/my_buying"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_my_buying"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/uploading"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_uploading"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/list_asatid"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_list_asatid"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/support"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_support"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_about"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern_omomi_profile">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:layout_alignParentTop="true"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:layoutDirection="rtl">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_search"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_search"/>
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/tab"
+                app:tabGravity="fill"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/black"
+                app:tabIndicatorFullWidth="false"
+                app:tabIconTintMode="multiply"
+                app:tabIndicator="@drawable/ic_drop_down"
+                app:tabIndicatorGravity="bottom"
+                app:tabInlineLabel="true"
+                app:tabIndicatorHeight="28dp"
+                app:tabIndicatorAnimationDuration="10"
+                app:tabRippleColor="@color/blue_light">
+
+
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/omumi"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/takhasosi"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maqale" />
+
+            </com.google.android.material.tabs.TabLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"/>
+
+        </LinearLayout>
+
+    <!-- visibility bayad gone shavad-->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_add"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

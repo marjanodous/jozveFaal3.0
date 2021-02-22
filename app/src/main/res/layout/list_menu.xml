@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:id="@+id/original"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layoutDirection="ltr">
+<ImageView
+    android:layout_width="18dp"
+    android:layout_height="24dp"
+    android:background="@drawable/ic_save_icon"
+    android:layout_alignParentLeft="true"
+    android:layout_above="@id/relativeLayout"
+    android:layout_margin="5dp"
+    android:id="@+id/save"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_kharid_two"
+        android:layout_toRightOf="@id/save"
+        android:layout_above="@id/relativeLayout"
+        android:layout_margin="5dp"
+        android:id="@+id/kharid"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_pdf_icon"
+        android:layout_toRightOf="@id/kharid"
+        android:layout_above="@id/relativeLayout"
+        android:layout_margin="5dp"
+        android:id="@+id/format"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_gradient">
+
+        <TextView
+            android:id="@+id/book_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/reshte_title"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/book_name"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:maxLength="20"
+            android:layout_toLeftOf="@id/book_name_title"
+            android:layout_above="@id/reshte"
+            android:text="@string/book_name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/reshte_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/reshte"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/reshte"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/reshte_title"
+            android:textStyle="bold"
+            android:maxLength="25"
+            android:layout_centerVertical="true"
+            android:text="@string/reshte"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/book_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reshte_title"
+            android:text="@string/price"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/book_price"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLength="25"
+            android:layout_toLeftOf="@id/book_price_title"
+            android:layout_below="@id/reshte"
+            android:text="@string/price"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/rial"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reshte_title"
+            android:layout_toLeftOf="@id/book_price"
+            android:text="یال"
+            android:textColor="@color/gray"
+            android:textSize="9sp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_gradient"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
